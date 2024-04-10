@@ -1,0 +1,541 @@
+@media only screen and (max-width: 600px) {
+  
+.navbar {/*
+  display: flex;
+  top: 0;
+  position: fixed;*/
+    margin: 0;
+    max-width: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 0px 0px 25px 25px;
+}
+.body1 {
+    background-color: #2A2428;
+    max-height: auto;
+    max-width: auto;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    transition: font-size 0.3s ease;
+    color: white;
+    scroll-behavior: smooth;
+    background-image: url('images/bg2.jpg');
+    padding-bottom: 80px;
+}
+
+
+.body2 {
+  padding: 10px;
+}
+
+
+.html {
+    font-size: 16px; /* Default font size */
+    transition: font-size 0.3s ease;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #DBD8E3;
+    margin: 2px 0;
+    border-radius: 2px;
+    box-shadow: 2px 2px 2px black;
+}
+
+.menu-options {
+    display: flex;    
+    padding-left: 2px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+    text-shadow: 4px 4px 4px black;
+}
+
+.navbar a:hover {
+    background-color: #DBD8E3;
+    color: white;
+    
+}
+
+#results-container {
+    margin: 20px;
+}
+
+#results-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#results-container li {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+#results-container strong {
+    font-size: 1.2em;
+    color: #ffffff; /* Text color for recipe names */
+    text-shadow: 3px 3px 9px black;
+}
+
+#results-container ol {
+    margin-top: 10px;
+}
+
+#results-container li ol li {
+    margin: 5px 0;
+}
+
+#recipe-details-container strong{
+    margin: 20px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#recipe-details-container h2 {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+#recipe-details-container h3 {
+    color: #555;
+}
+
+#recipe-details-container li {
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+#recipe-details-container ol {
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.menu-icon {
+    display: flex;
+    padding-left: 15px;
+}
+
+.menu-options {
+    display: none;
+    flex-direction: column;
+    width: 80%;
+}
+
+.menu-options a {
+    text-align: center;
+    padding-right: 50px;
+}
+.menu-options a:hover {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    background: rgb(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(2.8px);
+    width: 65%;
+    height: 1rem;
+    padding-left: 40px;
+    }
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container input {
+    padding: 8px;
+    margin: 0 10px;
+    width: 219px;
+}
+
+.search-container button {
+    padding: 5px;
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+    font-family: Times New Roman;
+    border-radius: 5px;
+    color: white;
+    box-shadow: 0 4px 30px rgba(255, 255, 225, 0.3);
+}
+
+.horizontal-scroll-box {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 3px;
+}
+
+.news-item {
+    flex: 0 0 auto;
+    background-color: #ddd;
+    margin-right: 10px;
+    padding: 2px;
+}
+
+
+.main-content {
+    padding: 20px;
+    text-align: center;
+    font-family: Times New Roman;
+    font-size: 20px;
+}
+
+.horizontal-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    max-width: 100%;
+    scroll-snap-type: x mandatory;
+    justify-content: space-between;
+}
+
+.horizontal-scroll-box {
+    flex: 0 0 auto;
+    white-space: nowrap;
+    padding: 15px;
+    width: 44vh; 
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+.top-scroll-box{
+    height: 30vh; 
+    padding: 20px;
+    padding-bottom: 40px;
+    background-image: url('images/bg1.jpg');
+    display: relative;
+}
+
+.bottom-scroll-box {
+  
+}
+
+
+.placeholder-box {
+    display: inline-block;
+    padding: 50px;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    background: rgb(53, 47, 68, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    width: 11.5rem;
+    height: 16rem;
+    padding-top: 1.9rem;
+    padding-left: 10px;
+}
+
+.placeholder-box img {
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 155px;
+}
+
+.placeholder-text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        background-color: rgba(5, 2, 2, 0.5); /* Semi-transparent white background */
+        padding: 5px; /* Add padding to the text */
+        color: #ffffff;
+        font-size: large;
+        font-family: "Roboto", Sans-Serif;
+        text-shadow: 2px 2px 20px black;
+        font-style: normal;
+    }
+
+.horizontal-scroll-box a {
+    transition: transform 0.3s ease-out;
+}
+
+.horizontal-scroll-box a:hover {
+    transform: scale(1.05);
+    
+}
+
+.bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    height: 50px;
+    
+}
+
+.bottom-navbar button {
+    position: relative;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    bottom: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+}
+
+.bottom-navbar button:hover {
+    background-color: #2A2438;
+    color: #ffffff;
+}
+
+.settings-container {
+    margin: 20px;
+}
+
+.settings-container h2 {
+    color: #333;
+}
+
+.settings-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.settings-container button {
+    padding: 10px;
+    background-color: #555;
+    color: white;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.settings-container button:hover {
+    background-color: #777;
+}
+
+.consumed-water-section,
+.target-calorie-section,
+.consumed-calorie-section,
+.main-content-hc {
+  /*position: relative;
+  display: absolute;*/
+  margin: 20px;
+  border-bottom: 1px solid black;
+  width: 83.5%;
+  height: auto;
+  background-color: gray;
+  padding: 10px;
+  padding-top: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 16px;
+  background: rgb(219, 216, 227, 0.3);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+  backdrop-filter: blur(40px);
+}
+
+.navbar,
+.bottom-navbar {
+background-color: #352f44;
+/*background-image: linear-gradient(to top, #5c5470, #2A2438);*/
+}
+/*
+.main-content-hc h2 {
+  left: 60px;
+  position: absolute;
+  background-color: #9835;
+}
+
+.bmi-calculator {
+  position: absolute;
+  top: 70px;
+  align-items: center;
+}
+*/
+
+.bmi-calculator button {
+  position: flex;
+  top: 55px;
+  left: 120px;
+  padding-left: 20px;
+}
+
+.phara {
+  position: relative;
+  flex: center;
+  background-color: #4a4a4a;
+  height: 30px;
+  width: auto;
+}
+
+.containerBMR {
+    
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+label {
+    display: flex;
+    width: 150px;
+}
+
+input[type="number"],
+select {
+    width: 130px;
+}
+
+.BMR {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+/* Style for the target water intake input */
+targetWater {
+    width: 150px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+/* Add this CSS to your styles.css file or include it in a <style> tag in your HTML */
+.recipe-image {
+    max-width: 150px; /* Adjust the maximum width as needed */
+    height: auto; /* Ensure the aspect ratio of the image is maintained */
+    margin-right: 20px; /* Add margin to separate image from recipe details */
+    border-radius: 8px; /* Optional: Add border radius for rounded corners */
+  
+}
+
+/* Add this CSS to your styles.css file or include it in a <style> tag in your HTML */
+.recipe-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd; /* Add a bottom border to separate recipe cards */
+    padding-bottom: 10px; /* Add padding at the bottom of each recipe card */
+    font-size: 20px;
+}
+
+
+.recipe-details {
+    flex: 1; /* Allow the recipe details to occupy remaining space */
+}
+
+.recipe-ingredients {
+    font-size: 14px; /* Adjust font size for ingredients */
+    color: #979797; /* Add a faded color for ingredients */
+    margin-top: 5px; /* Add margin at the top of ingredients */
+}
+
+/* CSS for recipe details page */
+.recipe-details img {
+  max-width: 150px; /* Ensure the image fits within its container */
+    height: auto; /* Maintain the image aspect ratio */
+    display: block; /* Center the image horizontally */
+    margin: 0 auto; /* Center the image horizontally */
+    margin-bottom: 20px; /* Add some space below the image */
+}
+
+.recipe-info {
+  background: #5a5a5a55;
+  margin: 15px;
+  border-radius: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0 4px 5px rgba(255, 255, 255, 0.4);
+  border: 1px solid #0000007b;
+}
+
+
+/* CSS for settings page */
+.main-content-hc,
+.consumed-water-section,
+.target-calorie-section,
+.consumed-calorie-section {
+    margin: 20px;
+}
+
+.consumed-water-section input,
+.main-content-hc input,
+.target-calorie-section input[type="number"],
+.consumed-calorie-section input[type="number"] {
+    margin-right: 10px;
+    padding: 5px;
+    width: 200px;
+    border: 1px solid rgba(245, 203, 25, 0.3);;
+    border-radius: 4px;
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.bmi-calculator button,
+.main-content-hc button,
+.consumed-water-section button,
+.target-calorie-section button,
+.consumed-calorie-section button {
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: 2px solid #2A2438;
+    background-color: #352f44;
+    color: white;
+}
+
+#savedCalorieDisplay,
+#remainingCalorieDisplay {
+    margin-top: 10px;
+}
+
+img {
+        width: 137px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 5px; /* Add rounded corners */
+    }
+
+#results-container {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 16px;
+    background: rgb(219, 216, 227, 0.3);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(5px);
+    width: auto;
+    height: auto;
+}
+}

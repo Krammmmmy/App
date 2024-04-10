@@ -1,0 +1,4 @@
+[
+    { "name": "Vegetable Stir-Fry", "ingredients": ["bell peppers", "zucchini", "mushrooms", "onions", "soy sauce"], "instructions": ["1. Slice bell peppers, zucchini, mushrooms, and onions", "2. Stir-fry vegetables in a pan with soy sauce", "3. Cook until vegetables are tender"], "calories": 300 },
+    { "name": "Grilled Salmon", "ingredients": ["salmon fillet", "lemon", "olive oil", "garlic", "dill"], "instructions": ["1. Marinate salmon fillet with lemon, olive oil, garlic, and dill", "2. Grill salmon until cooked through"], "calories": 400 }
+]

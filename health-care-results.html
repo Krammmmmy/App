@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="stylesheet" href="styles.css">
+  <title>Health Care</title>
+</head>
+<body class="body1" class="bodybg">
+      <div class="navbar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu-options" id="menuOptions">
+            <a href="Index.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search recipes...">
+        <button type="button" onclick="search()">Search</button>
+    </div>
+    </div>
+  <div class="body2">
+      <div class="main-content-hc">
+        <h2>BMI Calculator</h2>
+        <div>
+            <label for="weight">Weight (kg):
+            </label>
+            
+            <input type="number" id="weight" placeholder="Enter weight in kg">
+            <label for="height">Height (cm):
+            </label>
+            <input type="number" id="height" placeholder="Enter height in cm">
+            <p id="result" class="phara"></p>
+            <button onclick="calculateBMI()">Calculate BMI
+            </button>
+        </div>
+    </div>
+    
+        
+    <div class="target-calorie-section">
+        <h2>Target Calorie Intake</h2>
+        <input type="number" id="targetCaloriesInput" placeholder="Enter target calorie intake">
+        <button onclick="saveTargetCalories()">Save</button>
+        <p id="savedCalorieDisplay">Saved target calorie intake: <span id="savedCalorieValue"></span></p>
+        
+        <p>Consumed Calories</p>
+        <input type="number" id="consumedCaloriesInput" placeholder="Enter consumed calories">
+        <p id="remainingCalorieDisplay">Remaining target calories: <span id="remainingCalorieValue"></span></p>
+        <button onclick="subtractConsumedCalories()">Subtract</button>
+    </div>
+    <div class="consumed-water-section">
+        <h2>Target Water Intake</h2>
+        <label for="targetWaterIntake">Target Water Intake (ml):</label>
+        <input type="number" id="targetWaterInput" placeholder="Enter target water intake in ml">
+        <button onclick="saveTargetWaterIntake()">Save</button>
+        <div id="remainingWater"></div>
+        <button onclick="drinkWater()">I drank 1 cup of water</button>
+    </div>
+  </div>
+    
+      <div class="bottom-navbar">
+        <button onclick="redirectToHome()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-home"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></button>
+        <button onclick="redirectToHealthCare()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-heart-pulse"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg></button>
+        <button onclick="redirectToSettings()"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-settings"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg></button>
+    </div>
+    
+    <script src="script.js" defer></script>
+    <script>
+        // Call the function to apply font size when the page loads
+        document.addEventListener('DOMContentLoaded', applyFontSizeFromLocalStorage);
+    </script>
+</body>
+</html>

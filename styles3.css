@@ -1,0 +1,13 @@
+ .recipe-image {
+    padding-left: 100px;
+}
+
+.recipe-info img {
+  padding: 5px;
+  padding-left: 20px;
+  background-color: none;
+}
+
+.recipe-info h2 {
+  text-align: center;
+}

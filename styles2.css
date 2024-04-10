@@ -1,0 +1,5 @@
+img {
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.9); /* Add a subtle shadow */
+        background: rgb(53, 47, 68, 0);
+        backdrop-filter: blur(0.1px);
+    }
